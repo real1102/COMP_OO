@@ -17,6 +17,6 @@ public class Start {
 		
 		POS_UI pos=new POS_UI(IC_data,DE_data);
 		pos.show_layout();
-		//testing
+		
 	}
 }

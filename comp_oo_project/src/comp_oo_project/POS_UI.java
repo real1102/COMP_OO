@@ -12,8 +12,7 @@ import java.util.*;
 
 
 public class POS_UI {
-	
-	private JTextField price_text= new JTextField() ;
+	private JTextField price_text= new JTextField();
 	private Hashtable<String,IC_flavor> IC_data=new Hashtable<>();
 	private Hashtable<String,Decorator> DE_data=new Hashtable<>();
 	private ArrayList<JButton> IC_button = new ArrayList<JButton>();
@@ -58,6 +57,7 @@ public class POS_UI {
         		common_func.prop_JComp_in_array(DE_button,false);
         		this_ice_cream = new ICE_CREAM();
         		update_price_text();
+        		update_iceDesc("");
         		//auto_ic();
             }
         });
@@ -210,7 +210,6 @@ public class POS_UI {
         main_frame.setResizable(false);
         main_frame.setVisible(true);
 	}
-	
 
 	
 	private void update_price_text(){

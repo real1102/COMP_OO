@@ -21,7 +21,7 @@ public class POS_UI {
 	private common_func common_func = new common_func();
 	//The current ice cream
 	private ICE_CREAM this_ice_cream;
-	private JTextArea ice_desc=new JTextArea(4,40);
+	private JTextArea ice_desc=new JTextArea(8,40);
 
 	public void setDE_data(Hashtable<String,Decorator> dE_data) {
 		DE_data = dE_data;
@@ -39,7 +39,7 @@ public class POS_UI {
 	public void show_layout(){
 		final JFrame main_frame = new JFrame("Ice Crean POS");
 		main_frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        main_frame.setSize(500, 400);
+        main_frame.setSize(500, 500);
         common_func.set_center(main_frame);
         main_frame.setLayout(new BorderLayout());
        
